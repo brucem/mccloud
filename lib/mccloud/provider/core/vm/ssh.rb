@@ -43,7 +43,7 @@ module Mccloud
         end
 
         def sudo_string(command=nil,options={})
-          prefix="sudo -E "
+          prefix="sudo -H "
 
           # Check if we override the user in the options
           unless options[:user]
